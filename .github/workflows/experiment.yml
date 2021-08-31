@@ -1,0 +1,11 @@
+name: experiment
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: bgalek/gh-events-test@main
+      - name: Run a one-line script
+        run: echo Hello, world!
